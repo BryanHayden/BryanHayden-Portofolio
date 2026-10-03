@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tiket Bioskop</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="nav-utama">
+            <h2>Pemesanan Tiket Online by : Bryan 8H</h2>
+        </div>
+    </div>
+    <div class="Home">
+        <div class="Banner-utama">
+            <div class="Banner">
+                <div class="banner1"><img src="IMG BIOSKOP/40b20f7a-aaaa-44b9-ac8b-cc17edbe3070-370x545.jpeg" alt="Poster Madame Web"></div>
+                <div class="banner2"><img src="IMG BIOSKOP/66b245d3-bdd7-4102-ae0f-ca0989882bec.jpeg" alt="Poster Pemandi Jenazah"></div>
+                <div class="banner3"><img src="IMG BIOSKOP/56135799-8648-413c-ad41-fb29ee2de801-370x545.jpeg" alt="Poster Agak Laen"></div>
+                <div class="banner4"><img src="IMG BIOSKOP/de025b71-11db-4c7a-9d74-c1839d75fcf6-370x545.jpeg" alt="Poster Bob Marley"></div>
+                <div class="banner5"><img src="IMG BIOSKOP/e3b346da-8dae-40e4-a68b-f879f3fcd0e1-370x545.jpeg" alt="Poster Sinden Gaib"></div>
+            </div>
+        </div>
+        <div class="bawah">
+            <div class="pesan">
+                <div class="pesan-utama">
+                    <h3>Pesan Tiket</h3><br>
+                    <select name="" id="film-akuh">
+                        <option value="">-- Film Akuhhh --</option>
+                        <option value="film-1">Madame Web</option>
+                        <option value="film-2">Pemandi Jenazah</option>
+                        <option value="film-3">Agak Laen Bapak Kau</option>
+                        <option value="film-4">Bob Marley - One Love</option>
+                        <option value="film-5">Sinden Gaib</option>
+                    </select>
+                    <input type="text"  disabled id="harga"><br><br>
+                    Jumlah beli Tiket : <br>
+                    <input type="text" id="jumlah-t"><span> Total : <span id="bayar"></span> </span>
+                    <p>Note : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde vitae nisi distinctio earum. <br>Perferendis vitae vel distinctio, amet maxime minima.</p>
+                    <br>
+                    <button class="Hitung" value="hitung" onclick="hitung()"> Hitung</button>
+                    <button class="Clear" type="reset" value="reset">Clear</button>
+                </div>
+            </div>
+            <div class="sinopsis">
+                <div class="kiri">
+                    <img src="IMG BIOSKOP/e3b346da-8dae-40e4-a68b-f879f3fcd0e1-370x545.jpeg" alt="Poster Film" id="img">
+                </div>
+                <div class="kanan">
+                    <h3>Sinopsis</h3>
+                    <p id="sinopsis"></p>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var selectFilm = document.getElementById("film-akuh");
+        var selectImg = document.getElementById("img");
+        var harga;
+        var sinopsis;
+
+        selectFilm.addEventListener("change", function(){
+            var selectValue = selectFilm.value;
+
+            if(selectValue === "film-1"){
+                selectImg.src = "IMG BIOSKOP/40b20f7a-aaaa-44b9-ac8b-cc17edbe3070-370x545.jpeg"
+                harga = 100000;
+                sinopsis = "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique placeat suscipit aliquam sunt, porro animi provident hic cumque eum atque voluptatibus corrupti consequatur rem nam ab ad dolore odit nulla? Possimus ipsum, natus earum deleniti dolore fugiat fuga illum sed, laboriosam corrupti voluptate! Esse atque voluptate ipsam vero dignissimos alias! Dolorem aperiam id perferendis iure illum, ut accusamus deleniti sequi reprehenderit dolor, facilis odio harum. Quasi provident totam consequatur sunt."
+            }else if(selectValue === "film-2"){
+                selectImg.src = "IMG BIOSKOP/66b245d3-bdd7-4102-ae0f-ca0989882bec.jpeg"
+                harga = 89000;
+                sinopsis = "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique placeat suscipit aliquam sunt, porro animi provident hic cumque eum atque voluptatibus corrupti consequatur rem nam ab ad dolore odit nulla? Possimus ipsum, natus earum deleniti dolore voluptate! Esse atque voluptate ipsam vero dignissimos alias! Dolorem aperiam id perferendis iure illum, ut accusamus deleniti sequi reprehenderit dolor, facilis odio harum. Quasi provident totam consequatur sunt."
+            }
+            else if(selectValue === "film-3"){
+                selectImg.src = "IMG BIOSKOP/56135799-8648-413c-ad41-fb29ee2de801-370x545.jpeg"
+                harga = 79500;
+                sinopsis = "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique placeat suscipit aliquam sunt, porro animi provident hic cumque eum atque voluptatibus corrupti consequatur rem nam ab ad dolore odit nulla? Possimus ipsum, natus earum deleniti dolore voluptate! Esse atque voluptate ipsam vero dignissimos alias! Dolorem aperiam id perferendis iure illum, ut accusamus deleniti sequi reprehenderit dolor, provident totam consequatur sunt."
+            }
+            else if(selectValue === "film-4"){
+                selectImg.src = "IMG BIOSKOP/de025b71-11db-4c7a-9d74-c1839d75fcf6-370x545.jpeg"
+                harga = 120000;
+                sinopsis = "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique placeat suscipit aliquam sunt, porro animi provident hic cumque eum atque voluptatibus corrupti consequatur rem nam ab ad dolore odit nulla? Possimus ipsum, natus earum deleniti dolore voluptate! Esse at! Dolorem aperiam id perferendis iure illum, ut accusamus deleniti sequi reprehenderit dolor, facilis odio harum. Quasi provident totam consequatur sunt."
+            }
+            else if(selectValue === "film-5"){
+                selectImg.src = "IMG BIOSKOP/e3b346da-8dae-40e4-a68b-f879f3fcd0e1-370x545.jpeg"
+                harga = 97800;
+                sinopsis = "Lorem, ipsum dolor sit elit. Similique placeat suscipit aliquam sunt, porro animi provident hic cumque eum atque voluptatibus corrupti consequatur rem nam ab ad dolore odit nulla? Possimus ipsum, natus earum deleniti dolore voluptate! Esse atque voluptate ipsam vero dignissimos alias! Dolorem aperiam id perferendis iure illum, ut accusamus deleniti sequi reprehenderit dolor, facilis odio harum. Quasi provident totam consequatur sunt."
+            }
+            document.getElementById("harga").value = harga;
+            document.getElementById("sinopsis").innerText = sinopsis;
+        })
+        function hitung(){
+            var jumlahtiket = parseFloat(document.getElementById("jumlah-t").value);
+            var hasil = jumlahtiket*harga;
+            document.getElementById("bayar").textContent = hasil;
+        }
+    </script>
+</body>
+</html>
+
+
+                
+                

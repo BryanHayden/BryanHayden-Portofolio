@@ -1,0 +1,427 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Gill Sans MT';
+}
+html {
+    scroll-behavior: smooth;
+}
+
+/* Navbar Placeholder Starts */
+
+.Back {
+    background-color: white;
+    width: 100%;
+    height: 10vh;
+    position: fixed;
+    z-index: 99;
+}
+
+/* Navbar Placeholder Ends */
+
+/* Product Info Starts */
+
+.product-info {
+    width: 100%;
+    height: 130vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.product-info-image {
+    width: 500px;
+    height: 85vh;
+    margin-top: 75px;
+    border: 2px solid gray;
+    background-color: lightgray;
+    border-radius: 20px;
+}
+.main-image {
+    width: 415px;
+    height: 415px;
+    background-color: white;
+    box-shadow: 5px 8px 10px gray;
+    margin-top: 40px;
+    margin-left: 40px;
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+}
+.main-image img {
+    width: 415px;
+    border-radius: 30px;
+}
+.image-changer {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.image-changer img {
+    width: 110px;
+    height: 110px;
+    cursor: pointer;
+    border-radius: 6px;
+    box-shadow: 5px 8px 10px gray;
+}
+.product-info-desc {
+    width: 500px;
+    height: 80vh;
+    margin-top: 75px;
+    border-radius: 20px;
+    border: 2px solid gray;
+    background-color:lightgray;
+}
+.product-info-desc hr {
+    border-color: gray;
+}
+.product-name {
+    margin: 20px;
+}
+.product-name h1 {
+    font-size: 2rem;
+    cursor: default;
+}
+.product-price {
+    margin: 20px;
+}
+.product-price h2 {
+    font-size: 1.75rem;
+    cursor: default;
+}
+.product-category {
+    margin: 20px;
+}
+.product-category h2 {
+    color: rgb(90, 90, 90);
+    font-size: 1.5rem;
+    cursor: default;
+}
+.product-desc {
+    margin: 20px;
+}
+.product-desc h3 {
+    font-size: 1.15rem;
+    cursor: default;
+}
+.buy {
+    margin: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.buy button {
+    width: 200px;
+    height: 35px;
+    border: none;
+    background: #000000e0;
+    border-radius: 20px;
+    cursor: pointer;
+    color: white;
+    font-size: 1.25rem;
+}
+.buy button:hover {
+    background-color:  #7a7a7ae0;
+    transition: 1s;
+}
+
+/* Product Info Ends */
+
+/* Footer Starts */
+
+.footer {
+    width: 100%;
+    height: 50vh;
+}
+.top-footer {
+    height: 35vh;
+    background-color: rgb(199, 229, 255);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.top-left-footer {
+    width: 480px;
+    height: 25vh;
+    font-size: 1.15rem;
+    background-color: rgb(182, 206, 227);
+    border-radius: 20px;
+    padding: 20px;
+    cursor: default;
+}
+.top-right-footer {
+    width: 480px;
+    height: 25vh;
+    text-align: right;
+    font-size: 1.15rem;
+    background-color: rgb(182, 206, 227);
+    border-radius: 20px;
+    padding: 20px;
+}
+.top-right-footer h1 {
+    cursor: default;
+}
+.top-right-footer p {
+    cursor: pointer;
+}
+.top-right-footer p:hover {
+    background-color: rgb(158, 180, 198);
+    color: white;
+    font-weight: bold;
+}
+.bottom-footer {
+    height: 15vh;
+    background-color: rgb(158, 180, 198);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    color: white;
+    cursor: default;
+}
+.Back a{
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+.Back h1 {
+    padding-left: 25px;
+    padding-top: 20px;
+}
+/* Footer Ends */
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Gill Sans MT';  
+}
+.nav-utama {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color:rgb(33, 33, 33);
+}
+.navbar{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 15vh;
+    width: 100%;
+    z-index: 99;
+    position: fixed;
+    background-color: white;
+    color: rgb(109, 108, 108);
+}
+.navbar-logo img{
+    height: 4rem;
+    width: 12rem;
+    padding-right: 50px;
+}
+.navbar-cari input{
+    height: 55%;
+    width: 40rem;
+    margin-right: 50px;
+    font-size: 1.2rem;
+    padding-left: 20px;
+}
+.navbar-nav {
+    font-size: 1.5rem;
+    background: #6363631c;
+    border-radius: 30px;
+    height: 55px;
+    align-items: center;
+    justify-content:center ;
+    display: flex;
+}
+.navbar-nav a{
+    text-decoration: none;
+    color: black;
+    margin-right: 20px;
+    margin-left: 20px;
+    position: relative;
+    padding: 0px 10px ;
+    color: rgb(87, 87, 87);
+}
+
+.navbar-nav a:after {
+    content: "";
+    position: absolute;
+    background-color: gray;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+
+}
+.navbar-nav a:hover {
+    color: rgb(128, 128, 128);
+}
+.navbar-nav a:hover:after {
+    width: 95%;
+    transition: 0.4s;
+}
+.dropdown .dropbtn {
+    border: none;
+    outline: none;
+    color: rgb(87, 87, 87);
+    font-size: 24px;
+    margin-right: 20px;
+    margin-left: 20px;
+
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: #63636357;
+    min-width: 160px;
+    z-index: 1;
+    border-radius: 8px;
+    height: 227px;
+    padding-top: 10px;
+}
+  
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}  
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/* Navbar */
+
+/* Footer Start */
+
+
+.footer {
+    width: 100%;
+    height: 50vh;
+    margin-top:10vh;
+    color: white;
+}
+.top-footer {
+    height: 29.5vh;
+    background-color:rgb(33, 33, 33);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.top-left-footer {
+    width: 480px;
+    height: 25vh;
+    font-size: 1.15rem;
+    background-color:rgb(33, 33, 33);
+    border-radius: 20px;
+    margin-top: 50px;
+    cursor: default;
+}
+.top-right-footer {
+    width: 480px;
+    height: 25vh;
+    text-align: right;
+    font-size: 1.15rem;
+    background-color:rgb(33, 33, 33);
+    border-radius: 20px;
+    margin-top: 50px;
+
+}
+.top-right-footer h1 {
+    cursor: default;
+}
+.top-right-footer p {
+    cursor: pointer;
+}
+.top-right-footer p:hover {
+    background-color:white;
+    color: black;
+    font-weight: bold;
+}
+.bottom-footer {
+    height: 40vh;
+    background-color:rgb(33, 33, 33);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    color: white;
+    cursor: default;
+}
+.bottom-right-footer img {
+    border-radius: 20px;
+    border: 3px solid rgb(86, 98, 108);
+}
+
+
+/* Footer End */
+
+* Rekomendasi Start */
+
+.rekomendasi {
+    width: 100%;
+    height: 40vh;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center ;
+    padding-left: 65px;
+}
+
+.rekomen h1 {
+    padding-left: 20px;
+    padding-top: 20px;
+}
+.rekomen-card {
+    width: 11%;
+    height: 40vh;
+    margin-top: 35px;
+}
+.rekomendasi img{
+    width: 225px;
+    height: 225px;
+    justify-content: space-around;
+    cursor: pointer;
+}
+.rekomen-card h3 {
+    margin-left: 25px;
+}
+.rekomen-card-s {
+    width: 11%;
+    height: 40vh;
+    margin-top: 35px;
+}
+.rekomen-card-s h3 {
+    margin-left: 10px;
+}
+.rekomen-card-d {
+    width: 11%;
+    height: 40vh;
+    margin-top: 35px;
+}
+.rekomen-card-d h3 {
+    margin-left: 5px;
+}
+.rekomen-card-w {
+    width: 11%;
+    height: 40vh;
+    margin-top: 35px;
+}
+.rekomen-card-w img {
+    margin-left: 20px;
+}
+.rekomen-card-g {
+    width: 11%;
+    height: 40vh;
+    margin-top: 35px;
+}
+.rekomen-card-g img {
+ margin-left: 20px;
+}
+.rekomen-card-a {
+    width: 11%;
+    height: 40vh;
+    margin-top: 35px;
+}
+/* Rekomendasi End */

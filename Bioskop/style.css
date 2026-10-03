@@ -1,0 +1,235 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #f1f5f9;
+    color: #1e293b;
+    min-height: 100vh;
+}
+
+/* Navbar Start */
+.navbar {
+    width: 100%;
+    min-height: 60px;
+    background-color: #0f172a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 10px 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.nav-utama {
+    width: 100%;
+    max-width: 1200px;
+}
+
+.nav-utama h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+/* Navbar End */
+
+/* Home Start */
+.Home {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 15px;
+    min-height: calc(100vh - 60px);
+}
+
+.Banner-utama {
+    width: 100%;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+    padding: 15px;
+    margin-bottom: 20px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.Banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    min-width: min-content;
+}
+
+.Banner > div {
+    flex-shrink: 0;
+}
+
+.Banner img {
+    height: 300px;
+    width: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    transition: transform 0.2s ease;
+}
+
+.Banner img:hover {
+    transform: scale(1.03);
+}
+
+.bawah {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    align-items: stretch;
+}
+
+.pesan {
+    flex: 1.2;
+    background-color: white;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+}
+
+.pesan-utama h3 {
+    font-size: 1.3rem;
+    color: #0f172a;
+    margin-bottom: 15px;
+}
+
+.pesan select, 
+.pesan input[type="text"] {
+    width: 100%;
+    max-width: 320px;
+    height: 38px;
+    padding: 6px 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    outline: none;
+    margin-top: 5px;
+}
+
+.pesan select:focus,
+.pesan input[type="text"]:focus {
+    border-color: #2563eb;
+}
+
+.pesan p {
+    font-size: 0.85rem;
+    color: #64748b;
+    margin: 15px 0;
+    line-height: 1.5;
+}
+
+.pesan span {
+    font-weight: 600;
+    color: #0f172a;
+}
+
+#bayar {
+    color: #2563eb;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.Hitung, .Clear {
+    padding: 8px 20px;
+    height: auto;
+    border: none;
+    background-color: #0f172a;
+    color: white;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background 0.2s ease;
+}
+
+.Hitung:hover {
+    background-color: #2563eb;
+}
+
+.Clear {
+    background-color: #64748b;
+}
+
+.Clear:hover {
+    background-color: #475569;
+}
+
+.sinopsis {
+    flex: 0.8;
+    background-color: white;
+    border-radius: 12px;
+    padding: 25px;
+    display: flex;
+    gap: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+}
+
+.kiri img {
+    width: 140px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+}
+
+.kanan h3 {
+    font-size: 1.3rem;
+    color: #0f172a;
+    margin-bottom: 10px;
+}
+
+.kanan p {
+    font-size: 0.9rem;
+    color: #475569;
+    line-height: 1.6;
+}
+
+/* =========================================================
+   Mobile Responsiveness (HP / Tablet)
+   ========================================================= */
+@media (max-width: 868px) {
+    .bawah {
+        flex-direction: column;
+    }
+
+    .pesan, .sinopsis {
+        width: 100%;
+        flex: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .nav-utama h2 {
+        font-size: 1rem;
+    }
+
+    .Banner img {
+        height: 230px;
+        width: 155px;
+    }
+
+    .sinopsis {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .kiri {
+        margin: 0 0 15px 0;
+    }
+
+    .pesan input[type="text"], 
+    .pesan select {
+        max-width: 100%;
+    }
+}

@@ -1,0 +1,178 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Gill Sans MT';  
+}
+
+/* Navbar */
+
+.nav-utama {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color:rgb(33, 33, 33);
+}
+.navbar{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 15vh;
+    width: 100%;
+    z-index: 99;
+    position: fixed;
+    background-color: white;
+    color: rgb(109, 108, 108);
+}
+.navbar-logo img{
+    height: 4rem;
+    width: 12rem;
+    padding-right: 50px;
+}
+.navbar-cari input{
+    height: 55%;
+    width: 40rem;
+    margin-right: 50px;
+    font-size: 1.2rem;
+    padding-left: 20px;
+}
+.navbar-nav {
+    font-size: 1.5rem;
+    background: #6363631c;
+    border-radius: 30px;
+    height: 55px;
+    align-items: center;
+    justify-content:center ;
+    display: flex;
+}
+.navbar-nav a{
+    text-decoration: none;
+    color: black;
+    margin-right: 20px;
+    margin-left: 20px;
+    position: relative;
+    padding: 0px 10px ;
+    color: rgb(87, 87, 87);
+}
+
+.navbar-nav a:after {
+    content: "";
+    position: absolute;
+    background-color: gray;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+
+}
+.navbar-nav a:hover {
+    color: rgb(128, 128, 128);
+}
+.navbar-nav a:hover:after {
+    width: 95%;
+    transition: 0.4s;
+}
+.dropdown .dropbtn {
+    border: none;
+    outline: none;
+    color: rgb(87, 87, 87);
+    font-size: 24px;
+    margin-right: 20px;
+    margin-left: 20px;
+
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: #63636357;
+    min-width: 160px;
+    z-index: 1;
+    border-radius: 8px;
+    height: 227px;
+    padding-top: 10px;
+}
+  
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}  
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/* Navbar */
+
+/* Login */
+
+.login {
+    width: 100%;
+    height: 85vh;
+    margin-top: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightgray;
+}
+.login-card {
+    width: 70%;
+    height: 70vh;
+    background-color: white;
+    border-radius: 50px;
+    text-align: center;
+}
+.login-card h2 {
+    font-size: 3rem;
+    color: rgb(87, 87, 87);
+    margin-top: 20px;
+    cursor: default;
+}
+.login-card form {
+    width: 90%;
+    height: 25.5vh;
+    margin-left: 5%;
+    margin-top: 20px;
+    background-color: rgb(230, 230, 230);
+    border-radius: 50px;
+}
+.login-card form input {
+    width: 280px;
+    height: 40px;
+    font-size: 1.25rem;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 35px;
+    border-radius: 50px;
+    border: none;
+}
+.login-btn {
+    width: 200px;
+    height: 35px;
+    color: rgb(87, 87, 87);
+    background-color: rgb(230, 230, 230);
+    margin-top: 35px;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.login-btn:hover {
+    background-color: rgb(200, 200, 200);
+}
+.login-card p {
+    width: 150px;
+    margin-left: 43%;
+    margin-top: 20px;
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.login-card p:hover {
+    color: rgb(0, 0, 150);
+}
+
+/* Login */

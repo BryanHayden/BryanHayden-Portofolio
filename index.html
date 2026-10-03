@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portofolio Bryan Hayden - Web Developer & Multimedia Specialist dari Palembang. Berpengalaman dalam pembuatan website interaktif dan pemenang juara lomba coding.">
+    <title>Bryan Hayden | Portofolio Website</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+    <header class="header" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <span class="logo-text">Bryan Hayden</span>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="nav-desktop">
+                <ul class="nav-links">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#tools" class="nav-link">Tools</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Mobile Hamburger Button -->
+            <button class="hamburger" id="hamburger-btn" aria-label="Buka Menu Navigasi" aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+
+        <!-- Mobile Drawer Menu -->
+        <div class="mobile-menu" id="mobile-menu">
+            <div class="mobile-menu-header">
+                <div class="logo">
+                    <span class="logo-text">Bryan Hayden</span>
+                </div>
+                <button class="close-menu" id="close-menu-btn" aria-label="Tutup Menu">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <ul class="mobile-nav-links">
+                <li><a href="#home" class="mobile-nav-link"><i class="fa-solid fa-house"></i> Home</a></li>
+                <li><a href="#about" class="mobile-nav-link"><i class="fa-solid fa-user"></i> About</a></li>
+                <li><a href="#tools" class="mobile-nav-link"><i class="fa-solid fa-screwdriver-wrench"></i> Tools</a></li>
+                <li><a href="#projects" class="mobile-nav-link"><i class="fa-solid fa-laptop-code"></i> Projects</a></li>
+                <li><a href="#contact" class="mobile-nav-link"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+            </ul>
+            <div class="mobile-menu-footer">
+                <a href="https://wa.me/6289690470008" target="_blank" class="btn-mobile-contact">
+                    <i class="fa-brands fa-whatsapp"></i> Chat WhatsApp
+                </a>
+            </div>
+        </div>
+        <!-- Backdrop Overlay for Mobile Menu -->
+        <div class="menu-overlay" id="menu-overlay"></div>
+    </header>
+
+    <!-- ================= SECTION HOME ================= -->
+    <section class="hero-section" id="home">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-dot"></span>
+                    <span>Multimedia Website &amp; Coding Specialist</span>
+                </div>
+                <h1 class="hero-title">
+                    Haloo, Nama saya <span class="text-gradient">Bryan Hayden</span>
+                </h1>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        <i class="fa-solid fa-rocket"></i> Lihat Project Saya
+                    </a>
+                    <a href="#about" class="btn btn-outline">
+                        <i class="fa-solid fa-address-card"></i> Tentang Saya
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-image-wrapper">
+                <div class="image-glow"></div>
+                <div class="image-card">
+                    <img src="img/foto.jpeg" alt="Foto Bryan Hayden" class="hero-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= SECTION ABOUT ================= -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Tentang <span class="text-gradient">Saya</span></h2>
+                <div class="header-line"></div>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-image-col">
+                    <div class="about-card-img">
+                        <img src="img/foto.jpeg" alt="Foto Bryan Hayden - Profil" class="about-img">
+                        <div class="about-badge-card">
+                            <span class="badge-icon"><i class="fa-solid fa-graduation-cap"></i></span>
+                            <div>
+                                <h4>Ignatius Global School</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-content-col">
+                    <div class="bio-box">
+                        <h3 class="bio-heading">
+                            <i class="fa-solid fa-quote-left quote-icon"></i>
+                            Biografi Singkat
+                        </h3>
+                        <p class="bio-text">
+                            "Halo, nama saya Bryan Hayden, saya lahir di Palembang pada tanggal 16 Juni 2010. Coding merupakan hobi saya dari dulu, saat kelas 7 SMP saya pertama kali belajar coding karena coding merupakah salah satu pilihan bahasa asing. Saya mendapati coding cukup menarik untuk di pelajari. Saat SMP saya mengikuti lomab CODING Competition GEN Z NATIONALISM dan mendapatkan juara satu. Saat SMA-pun saya mengikuti lomba Web Coding di event Meloria dan mendapatkan juara 3. Inilah mengapa saya memilih bidang Multimedia Website, karena saya merasa saya mampu mengurus dan menghandle bidang Website ini."
+                        </p>
+                    </div>
+
+                    <!-- Prestasi / Achievement Cards -->
+                    <div class="achievements-container">
+                        <h4 class="achievements-title">Prestasi &amp; Penghargaan</h4>
+                        <div class="achievements-grid">
+                            <div class="achievement-card gold">
+                                <div class="achievement-icon">
+                                    <i class="fa-solid fa-medal"></i>
+                                </div>
+                                <div class="achievement-info">
+                                    <span class="achievement-rank">Juara 1</span>
+                                    <h5>Coding Competition GEN Z NATIONALISM</h5>
+                                    <p>Tingkat SMP • Proyek Web Hari Pahlawan Nasional</p>
+                                </div>
+                            </div>
+
+                            <div class="achievement-card bronze">
+                                <div class="achievement-icon">
+                                    <i class="fa-solid fa-award"></i>
+                                </div>
+                                <div class="achievement-info">
+                                    <span class="achievement-rank">Juara 3</span>
+                                    <h5>Lomba Web Coding Event Meloria</h5>
+                                    <p>Tingkat SMA • Kompetisi Pengembangan Web</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Informasi Tambahan -->
+                    <div class="personal-info-grid">
+                        <div class="info-pill">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>Palembang, Indonesia</span>
+                        </div>
+                        <div class="info-pill">
+                            <i class="fa-solid fa-calendar-days"></i>
+                            <span>16 Juni 2010</span>
+                        </div>
+                        <div class="info-pill">
+                            <i class="fa-solid fa-laptop-code"></i>
+                            <span>Multimedia &amp; Web Development</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= SECTION TOOLS ================= -->
+    <section class="tools-section" id="tools">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Workflow &amp; Software</span>
+                <h2 class="section-title">Tools yang <span class="text-gradient">Saya Gunakan</span></h2>
+                <div class="header-line"></div>
+            </div>
+
+            <div class="tools-grid">
+                <!-- Tool 1: VS Code -->
+                <div class="tool-card">
+                    <div class="tool-glow"></div>
+                    <div class="tool-img-wrapper">
+                        <img src="img/vscodeosis-removebg-preview.png" alt="Visual Studio Code" class="tool-img">
+                    </div>
+                    <h3 class="tool-name">Visual Studio Code</h3>
+                </div>
+
+                <!-- Tool 2: GitHub -->
+                <div class="tool-card">
+                    <div class="tool-glow"></div>
+                    <div class="tool-img-wrapper github-wrapper">
+                        <img src="img/GitHub-Symbol.png" alt="GitHub" class="tool-img github-img">
+                    </div>
+                    <h3 class="tool-name">GitHub</h3>
+                </div>
+
+                <!-- Tool 3: Sublime Text -->
+                <div class="tool-card">
+                    <div class="tool-glow"></div>
+                    <div class="tool-img-wrapper">
+                        <img src="img/image-removebg-preview.png" alt="Sublime Text" class="tool-img">
+                    </div>
+                    <h3 class="tool-name">Sublime Text</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= SECTION PROJECTS ================= -->
+    <section class="projects-section" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Karya &amp; Implementasi</span>
+                <h2 class="section-title">Portofolio <span class="text-gradient">Project</span></h2>
+                <div class="header-line"></div>
+            </div>
+
+            <div class="projects-grid">
+
+                <!-- Project 1: Bioskop -->
+                <div class="project-card">
+                    <div class="project-card-banner">
+                        <img src="Bioskop/IMG BIOSKOP/66b245d3-bdd7-4102-ae0f-ca0989882bec.jpeg" alt="Project Pemesanan Tiket Bioskop" class="project-img">
+                        <div class="project-overlay">
+                            <a href="Bioskop/Bioskop.html" target="_blank" class="overlay-btn" title="Buka Pemesanan Tiket Bioskop">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                        <span class="project-category-badge"><i class="fa-solid fa-film"></i> Interactive Web App</span>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">Pemesanan Tiket Bioskop Online</h3>
+                        <p class="project-desc">
+                            Aplikasi web interaktif pemesanan tiket bioskop karya Bryan. Dilengkapi fitur dropdown pemilihan film, preview poster dan sinopsis dinamis secara langsung, serta kalkulator hitung otomatis total harga tiket berdasarkan jumlah pembelian.
+                        </p>
+                        <div class="project-tech-tags">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                            <span>DOM Manipulation</span>
+                        </div>
+                        <div class="project-footer">
+                            <a href="Bioskop/Bioskop.html" target="_blank" class="btn btn-project">
+                                <span>Buka Project</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: Lomba Coding (Hari Pahlawan) -->
+                <div class="project-card">
+                    <div class="project-card-banner">
+                        <img src="Lomba Coding/Folder Image and Video/Hari Pahlawan.jpg" alt="Website Lomba Coding Hari Pahlawan" class="project-img">
+                        <div class="project-overlay">
+                            <a href="Lomba Coding/HTML/HOME PAGE.html" target="_blank" class="overlay-btn" title="Buka Website Lomba Coding">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                        <span class="project-category-badge"><i class="fa-solid fa-code"></i> Lomba Coding</span>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">Website Lomba Coding - Hari Pahlawan</h3>
+                        <p class="project-desc">
+                            Proyek website edukasi kebangsaan yang dibuat untuk kegiatan lomba Hari Pahlawan. Menampilkan biografi lengkap Sultan Mahmud Badaruddin II, warisan kebudayaan daerah Palembang (Rumah Limas, Keris, Pempek), galeri seni, dan pemutar video sejarah.
+                        </p>
+                        <div class="project-tech-tags">
+                            <span>HTML Semantics</span>
+                            <span>CSS Design</span>
+                            <span>Video &amp; Audio</span>
+                            <span>Multi-Page</span>
+                        </div>
+                        <div class="project-footer">
+                            <a href="Lomba Coding/HTML/HOME PAGE.html" target="_blank" class="btn btn-project">
+                                <span>Buka Project</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: E-Commerce (Project Kelompok 1) -->
+                <div class="project-card">
+                    <div class="project-card-banner">
+                        <img src="Project Kelompok 1/Img/Banner1.webp" alt="Website E-Commerce Samsung Store" class="project-img">
+                        <div class="project-overlay">
+                            <a href="Project Kelompok 1/index.html" target="_blank" class="overlay-btn" title="Buka Website E-Commerce">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                        <span class="project-category-badge"><i class="fa-solid fa-cart-shopping"></i> Project Kelompok 1</span>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">E-Commerce - Samsung Store</h3>
+                        <p class="project-desc">
+                            Website toko online produk elektronik hasil kolaborasi Proyek Kelompok 1. Memiliki carousel banner produk, navigasi kategori (Handphone, Laptop, Kulkas, Tablet), 15+ katalog halaman detail produk, serta sistem form Login dan Sign In.
+                        </p>
+                        <div class="project-tech-tags">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>Slick Carousel</span>
+                            <span>E-Commerce UI</span>
+                        </div>
+                        <div class="project-footer">
+                            <a href="Project Kelompok 1/index.html" target="_blank" class="btn btn-project">
+                                <span>Buka Project</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4: YouTube Clone -->
+                <div class="project-card">
+                    <div class="project-card-banner yt-banner">
+                        <img src="Youtube/img/YT.png" alt="Website YouTube Clone" class="project-img yt-logo-preview">
+                        <div class="project-overlay">
+                            <a href="Youtube/Youtube.html" target="_blank" class="overlay-btn" title="Buka Website YouTube Clone">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                        <span class="project-category-badge"><i class="fa-brands fa-youtube"></i> YouTube Clone</span>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">YouTube Web Clone</h3>
+                        <p class="project-desc">
+                            Replika antarmuka platform YouTube modern dengan rancangan navigasi komprehensif. Menyediakan top bar pencarian &amp; voice search, chips filter kategori konten, serta sidebar menu terstruktur (Beranda, Shorts, Subscriptions, Channel, Histori, dan Eksplorasi).
+                        </p>
+                        <div class="project-tech-tags">
+                            <span>HTML5</span>
+                            <span>CSS Grid &amp; Flexbox</span>
+                            <span>Sidebar Navigation</span>
+                            <span>UI Replication</span>
+                        </div>
+                        <div class="project-footer">
+                            <a href="Youtube/Youtube.html" target="_blank" class="btn btn-project">
+                                <span>Buka Project</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= SECTION CONTACT ================= -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Mari Terhubung</span>
+                <h2 class="section-title">Kontak <span class="text-gradient">Saya</span></h2>
+                <div class="header-line"></div>
+            </div>
+
+            <div class="contact-wrapper">
+                <div class="contact-card-main">
+                    <div class="contact-avatar-box">
+                        <img src="img/foto.jpeg" alt="Bryan Hayden" class="contact-avatar">
+                        <div>
+                            <h3 class="contact-name">Bryan Hayden</h3>
+                            <p class="contact-sub">Multimedia &amp; Web Developer</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-list">
+                        <!-- Phone / WhatsApp Item -->
+                        <div class="contact-info-item">
+                            <div class="contact-item-icon whatsapp-bg">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </div>
+                            <div class="contact-item-details">
+                                <span class="contact-item-label">Nomor Telepon &amp; WhatsApp:</span>
+                                <a href="https://wa.me/6289690470008" target="_blank" class="contact-item-value highlight-link">
+                                    +62-896-9047-0008
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Direct Call -->
+                        <div class="contact-info-item">
+                            <div class="contact-item-icon call-bg">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div class="contact-item-details">
+                                <span class="contact-item-label">Panggilan Langsung:</span>
+                                <a href="tel:+6289690470008" class="contact-item-value">
+                                    +62-896-9047-0008
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Location -->
+                        <div class="contact-info-item">
+                            <div class="contact-item-icon location-bg">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div class="contact-item-details">
+                                <span class="contact-item-label">Domisili:</span>
+                                <span class="contact-item-value">Palembang, Sumatera Selatan, Indonesia</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-actions">
+                        <a href="https://wa.me/6289690470008?text=Halo%20Bryan%20Hayden,%20saya%20melihat%20portofolio%20website%20kamu%20dan%20tertarik%20untuk%20terhubung!" target="_blank" class="btn btn-whatsapp">
+                            <i class="fa-brands fa-whatsapp"></i> Chat via WhatsApp
+                        </a>
+                        <a href="tel:+6289690470008" class="btn btn-call">
+                            <i class="fa-solid fa-phone-volume"></i> Telepon Sekarang
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="#home" class="logo">
+                    <span class="logo-text">Bryan Hayden</span>
+                </a>
+                <p class="footer-tagline">
+                    Portofolio resmi bidang Multimedia Website &amp; Web Development.
+                </p>
+            </div>
+            
+            <div class="footer-nav">
+                <h4>Navigasi</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#tools">Tools</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-projects">
+                <h4>Akses Proyek</h4>
+                <ul>
+                    <li><a href="Bioskop/Bioskop.html" target="_blank">Pemesanan Bioskop ↗</a></li>
+                    <li><a href="Lomba Coding/HTML/HOME PAGE.html" target="_blank">Lomba Coding Hari Pahlawan ↗</a></li>
+                    <li><a href="Project Kelompok 1/index.html" target="_blank">E-Commerce Samsung Store ↗</a></li>
+                    <li><a href="Youtube/Youtube.html" target="_blank">YouTube Web Clone ↗</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container footer-bottom-container">
+                <p>&copy; 2024 <strong>Bryan Hayden</strong>. All Rights Reserved. Web ini mengugunakan bahasa html,css,danjavascript</p>
+                <a href="#home" class="scroll-top-btn" id="scroll-top-btn" aria-label="Kembali ke atas">
+                    <i class="fa-solid fa-arrow-up"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript File -->
+    <script src="script.js"></script>
+</body>
+</html>

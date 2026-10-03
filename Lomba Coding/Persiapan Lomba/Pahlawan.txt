@@ -1,0 +1,59 @@
+Sultan Mahmud Badaruddin II
+
+Sultan Mahmud Badaruddin II adalah Sultan Palembang yang berkuasa dari 12 April 1804; yakni 10 hari setelah Ayahnya wafat, hingga diasingkan Belanda pada 1 Juli 1821. Nama lahirnya sebelum berkuasa adalah Raden Hasan Pangeran Ratu.
+
+Kelahiran: 23 November 1767, Palembang
+Meninggal: 26 November 1852, Ternate
+
+
+Sultan Mahmud Badaruddin II memimpin masyarakat Palembang melawan kolonial Belanda dan Inggris. Salah satu pertempuran yang dipimpin Sultan Mahmud Badaruddin II adalah Perang Menteng pada tahun 1819.
+
+Ayah Sultan Mahmud Badaruddin II adalah Sultan Muhammad Bahauddin yang berkuasa di Palembang periode 1776-1803. Sultan Muhammad Bahauddin inilah yang memulai pembangunan keraton atau Benteng Kuto Besak.
+
+Sultan Mahmud Badaruddin II ditetapkan sebagai Pahlawan Nasional pada 29 Oktober 1984.
+
+
+
+
+Lomba Coding dalam rangka Hari Pahlawan
+Maximal 2 orang /kelas (Perorang) 
+Durasi : (2 Jam)
+Membuat Website Bertema : NASIONALISME
+Subtema (Berbeda - beda)
+
+Rules :
+I. Participant From Grade VII - IX
+II. Max. 2 Person / Class
+III. Tools :
+     - Laptop (Any OS, compatible with programming Editor
+     - Sublime Text / Notepad ++
+     - Use HTML / CSS
+     - Use Chrome, IE, Edge, Firefox
+Rules of Design :
+1. Have 5 Pages and can connected each other
+2. Must use IGS Logo in header every page
+3. Web design must match the given theme
+4. Allow to use image as background
+5. Prepare images that will be use that will be used in making web designs
+6. Contain of website
+   - Home Page
+   - National Warrior Profile Page (Perjuangan)
+   - Province Culture Page
+   - Gallery Page (image)
+   - Profile Page (Perkenalan Designer), (Tinggalkan Comment)
+7. Does not contain SARA, Violence & Pornography
+
+Rules of web page
+1. Home Page : this page contain about your we design to viewers
+2. National Warrior Profile Page : this page contain about one Indonesia national warrior profile (Done)
+3. Province Culture Page : this page contains about a culture of Indonesia province 
+4. Gallery Page : this page contain about photos about Indonesia and diversity
+5. Your Profile Page : this page contains about your profile as a web designer, contact person, comment box, or everything about you
+
+
+Rules of Score
+1. Layout/Interface : 25
+2. Suitability with Theme : 20
+3. Attractiveness/Informative : 25
+4. Responsive : 20
+5. Originality : 10
